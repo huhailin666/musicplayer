@@ -1,0 +1,178 @@
+html,body {
+  height: 100%;
+  overflow: hidden;
+}
+.bg {
+  position: absolute;
+  z-index: -1;
+  left: -10px;
+  top: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-middle);
+  background-size: cover;
+  filter: blur(4px);
+}
+#page-music {
+  height: 100%;
+  margin: 0 auto;
+}
+main.layout {
+  height: 70vh;
+  padding-top: 10vh;
+
+}
+.layout {
+  margin: 0 auto;
+  width: 600px;
+}
+
+@media (min-width: 700px) {
+  .layout {
+    width: 600px;
+  }
+}
+@media (min-width: 900px) {
+  .layout {
+    width: 800px;
+  }
+}
+@media (min-width: 1000px) {
+  .layout {
+    width: 900px;
+  }
+}
+
+/*左侧布局*/
+.aside {
+  width: 40vh;
+  float: left;
+}
+figure {
+  background: url(http://cloud.hunger-valley.com/music/public_tuijian_spring.jpg-middle);
+  width: 40vh;
+  height: 40vh;
+  background-size: cover;
+}
+.actions {
+  margin-top: 5vh;
+}
+.actions span {
+  text-align: center;
+  display: inline-block;
+  width: 30%;
+  font-size: 5vh;
+  color: rgba(255,255,255,0.4);
+}
+.actions span:hover {
+  color: rgba(255,255,255,0.8);
+}
+/*右侧布局*/
+.detail {
+  margin-left: 48vh;
+  color: #fff;
+}
+h1 {
+  margin-top: 2vh;
+  margin-bottom: 8vh;
+  font-size: 5vh;
+}
+.icons {
+  display: flex;
+}
+.icons span {
+  flex: 1;
+  font-size: 3vh;
+}
+
+.area-bar {
+  position: relative;
+  margin-bottom: 8vh;
+  margin-top: 8vh;
+  width: 90%;
+}
+.bar {
+  width: 100%;
+  background: rgba(255,255,255,0.4);
+  height: 8px;
+}
+.bar-progress {
+  width: 0;
+  height: 8px;
+  background: #fff;
+  position: relative;
+}
+
+.current-time {
+  position: absolute;
+  right: -5vh;
+  top: -7px;
+}
+.lyric {
+  font-size: 3vh;
+}
+.lyric span {
+  opacity: 0;
+}
+/*footer样式*/
+footer {
+  background: rgba(255,255,255,0.2);
+  box-shadow: 0px -0.25vh 0.25vh 0.25vh rgba(255, 255, 255, 0.4);
+  width: 100%;
+  padding-top: 6vh;
+}
+footer .layout {
+  height: 30vh;
+  position: relative;
+}
+footer li.active {
+  box-shadow: 0 0 .5vh .5vh rgba(255,255,255,0.8)
+}
+footer .layout span {
+  position: absolute;
+  color: #fff;
+  font-size: 6vh;
+  opacity: 0;
+}
+footer .layout span:first-child {
+  top: 4vh;
+  left: -8vh;
+}
+footer .layout span:nth-child(2) {
+  top: 4vh;
+  right: -8vh;
+}
+footer:hover span {
+  opacity: 0.5;
+}
+footer .layout span:hover{
+  opacity: 1;
+}
+footer .layout .box {
+  position: relative;
+  height: 22vh;
+  overflow: hidden;
+}
+footer .layout .box ul {
+  height: 20vh;
+  position: absolute;
+  left: 0;
+}
+footer .layout .box ul .item {
+  width: 20vh;
+  height: 20vh;
+  float: left;
+  margin-right: 3vh;
+}
+footer .layout .box ul .item h3 {
+  font-size: 2vh;
+  color: rgba(255,255,255,0.6);
+  text-align: center;
+  margin-top: 1vh;
+  font-family: cursive;
+}
+footer .layout .box ul .item .img {
+  width: 20vh;
+  height: 15vh;
+  background-size: cover;
+}
